@@ -10,13 +10,11 @@
 - Use of getStaticProps (runs once if no revalidate) and getServerSideProps (runs for every incoming request) for Data fetching from prerendering
 - getStaticPaths, is needed in dynamic pages to tell NextJS for which dynamic parameter values the page should be pre-generated.
 - API Routes: the NextJS will pick up any JavaScript files stored in api folder and turn those files into API routes.
-
 - Adding metadata Head
 
 - Deploying final version to https://vercel.com/
-
-  A deployed and running version could be accessed through
-  http://localhost:3000/
+  Deployed and running version can be accessed through
+  https://meetup-app-next-js-last.vercel.app/
 
 Prerequest: https://nodejs.org/en/
 
@@ -26,6 +24,8 @@ In order to run the program, after download or pull run
 - npx create-next-app
 - npm run dev
 - npm run build (before deploy)
+- A deployed and running version could be accessed through
+  http://localhost:3000/
 
 - create a mongo db cluster and replace the connection literal with the created one
   const client = await MongoClient.connect(
